@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Doublure se place entre votre outil de chat et l'IA : les noms, IBAN, e-mails et numéros sont remplacés par des codes avant l'envoi, puis rétablis dans la réponse. L'IA ne voit jamais les vraies informations." />
+    <meta name="theme-color" content="#06070a" />
+    <title>Doublure — Profitez de l'IA sans lui confier les données de vos clients</title>
+    <link rel="canonical" href="https://doublure.ch/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Doublure" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:title" content="Doublure — Profitez de l'IA sans lui confier les données de vos clients" />
+    <meta property="og:description"
+        content="Les noms, IBAN, e-mails et numéros sont remplacés par des codes avant l'envoi à l'IA, puis rétablis dans la réponse." />
+    <meta property="og:url" content="https://doublure.ch/" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Doublure — Profitez de l'IA sans lui confier les données de vos clients" />
+    <meta name="twitter:description"
+        content="Les noms, IBAN, e-mails et numéros sont remplacés par des codes avant l'envoi à l'IA, puis rétablis dans la réponse." />
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="favicon.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" />
+    <link rel="stylesheet" href="css/style.css?v=20261114" />
+</head>
+
+<body data-translation-path="json/translation.json">
+
+    <a href="#main-content" class="skip-link">Aller au contenu</a>
+
+    <header class="header" data-theme="dark">
+        <div class="container nav">
+            <a href="#" class="logo" data-action="top">Doublure<span>.</span></a>
+
+            <nav class="navigation" id="site-navigation" aria-label="Navigation principale">
+                <a href="#how" data-i18n="nav.how">Comment ça marche</a>
+                <a href="#paths" data-i18n="nav.paths">Formules</a>
+                <a href="#pricing" data-i18n="nav.pricing">Tarifs</a>
+                <a href="#faq" data-i18n="nav.faq">FAQ</a>
+            </nav>
+
+            <div class="nav-end">
+                <div class="lang-switch" role="group" aria-label="Langue">
+                    <button type="button" data-lang="fr" aria-pressed="true">FR</button>
+                    <button type="button" data-lang="en" aria-pressed="false">EN</button>
+                    <button type="button" data-lang="es" aria-pressed="false">ES</button>
+                </div>
+                <a href="#contact" class="button button-primary nav-cta" data-i18n="nav.contact">Demander une démo</a>
+            </div>
+
+            <button type="button" class="nav-toggle" data-nav-toggle aria-expanded="false"
+                aria-controls="site-navigation">
+                <span aria-hidden="true">☰</span>
+                <span class="sr-only">Menu</span>
+            </button>
+        </div>
+    </header>
+
+    <main id="main-content">
+
+        <!-- HERO -->
+        <section class="hero" data-nav-theme="dark">
+            <div class="container hero-content">
+                <div class="hero-text" data-reveal>
+                    <p class="eyebrow" data-i18n="hero.eyebrow">Protégez les données de vos clients</p>
+                    <h1 data-i18n="hero.title">
+                        Profitez de l'IA sans lui confier les données de vos clients.
+                    </h1>
+                    <p class="hero-description" data-i18n="hero.description">
+                        Doublure se place entre votre outil de chat et l'IA. Avant l'envoi, les noms, IBAN,
+                        e-mails et numéros sont remplacés par des codes ; ils réapparaissent dans la réponse,
+                        chez vous. L'IA ne voit jamais les vraies informations.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="button button-primary" data-i18n="hero.primaryButton">
+                            Demander une démo
+                        </a>
+                        <a href="#how" class="button button-secondary" data-i18n="hero.secondaryButton">
+                            Comment ça marche
+                        </a>
+                    </div>
+                    <ul class="chips">
+                        <li class="chip" data-i18n="hero.meta.1">Installé chez vous</li>
+                        <li class="chip" data-i18n="hero.meta.2">Compatible avec vos outils</li>
+                        <li class="chip" data-i18n="hero.meta.3">Rien ne part sans protection</li>
+                        <li class="chip" data-i18n="hero.meta.4">Avec votre clé ou la nôtre</li>
+                    </ul>
+                </div>
+
+                <!-- Orbe -->
+                <div class="hero-visual" aria-hidden="true" data-reveal>
+                    <div class="ai-orb" id="aiOrb">
+                        <div class="orb-glow"></div>
+                        <div class="orb-ring-outer"></div>
+                        <div class="orb-ring-mid"></div>
+                        <div class="orb-core"></div>
+
+                        <div class="orbit orbit-1"><div class="small-orb"></div></div>
+                        <div class="orbit orbit-2"><div class="small-orb"></div></div>
+                        <div class="orbit orbit-3"><div class="small-orb"></div></div>
+                    </div>
+
+                    <div class="floating-card card-one">
+                        <span data-i18n="hero.card1.value">IBAN</span>
+                        <small data-i18n="hero.card1.label">MASQUÉ</small>
+                    </div>
+                    <div class="floating-card card-two">
+                        <span data-i18n="hero.card2.value">NOM</span>
+                        <small data-i18n="hero.card2.label">→ CODE</small>
+                    </div>
+                    <div class="floating-card card-three">
+                        <span data-i18n="hero.card3.value">RÉPONSE</span>
+                        <small data-i18n="hero.card3.label">RESTITUÉE</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROBLÈME -->
+        <section class="problem section section--tight" data-nav-theme="dark">
+            <div class="container">
+                <div class="section-heading section-heading--wide" data-reveal>
+                    <p class="eyebrow" data-i18n="problem.eyebrow">LE PROBLÈME</p>
+                    <h2 data-i18n="problem.title">Chaque message envoyé à l'IA est une fuite possible</h2>
+                    <p data-i18n="problem.description">
+                        Un dossier client, une adresse, un IBAN collés dans le chat : l'information part chez le
+                        fournisseur d'IA, s'ajoute à ses historiques, et vous ne savez plus combien de temps
+                        elle y reste.
+                    </p>
+                </div>
+
+                <div class="problem-grid">
+                    <article class="problem-item" data-reveal>
+                        <h3 data-i18n="problem.1.title">Vos données partent en clair</h3>
+                        <p data-i18n="problem.1.text">
+                            Nom, adresse, IBAN, numéro de dossier : tout ce que vous tapez dans un chat est
+                            envoyé tel quel.
+                        </p>
+                    </article>
+                    <article class="problem-item" data-reveal>
+                        <h3 data-i18n="problem.2.title">Elles restent chez le fournisseur</h3>
+                        <p data-i18n="problem.2.text">
+                            Chaque fournisseur a ses règles de conservation. Elles changent, et ne se négocient
+                            pas au cas par cas.
+                        </p>
+                    </article>
+                    <article class="problem-item" data-reveal>
+                        <h3 data-i18n="problem.3.title">Chacun trouve un contournement</h3>
+                        <p data-i18n="problem.3.text">
+                            Sans outil simple, les équipes recopient leurs données ailleurs, et le problème revient
+                            par la porte de derrière.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- DÉMO -->
+        <section id="demo" class="demo section" data-nav-theme="light">
+            <div class="container">
+                <div class="section-heading" data-reveal>
+                    <p class="eyebrow" data-i18n="demo.eyebrow">AVANT / APRÈS</p>
+                    <h2 data-i18n="demo.title">Ce que vous tapez, ce que l'IA reçoit</h2>
+                    <p data-i18n="demo.description">
+                        Le remplacement se fait juste avant l'envoi à l'IA. La réponse revient avec vos vraies
+                        informations.
+                    </p>
+                </div>
+
+                <div class="demo-grid">
+                    <article class="demo-card demo-card--out" data-reveal>
+                        <p class="demo-label" data-i18n="demo.outgoing.label">
+                            Ce que reçoit l'IA
+                        </p>
+                        <p class="demo-text" data-i18n="demo.outgoing.text">
+                            Mon IBAN est [[IBAN_1]] et mon e-mail est [[EMAIL_1]]. Reformule ces informations
+                            pour mon conseiller.
+                        </p>
+                    </article>
+                    <article class="demo-card demo-card--in" data-reveal>
+                        <p class="demo-label" data-i18n="demo.incoming.label">Ce que vous lisez à l'écran</p>
+                        <p class="demo-text" data-i18n="demo.incoming.text">
+                            Mon IBAN est CH93 0076 2011 6238 5295 7 et mon e-mail est test@exemple.ch. Voici une
+                            reformulation…
+                        </p>
+                    </article>
+                </div>
+
+                <p class="demo-note" data-i18n="demo.note">
+                    Les correspondances restent en mémoire, le temps de la session : rien de sensible n'est
+                    écrit sur le disque. Si Doublure redémarre en pleine conversation, les codes ne sont plus
+                    rétablis.
+                </p>
+            </div>
+        </section>
+
+        <!-- DEUX PARCOURS -->
+        <section id="paths" class="paths section" data-nav-theme="dark">
+            <div class="container">
+                <div class="section-heading" data-reveal>
+                    <p class="eyebrow" data-i18n="paths.eyebrow">DEUX FORMULES</p>
+                    <h2 data-i18n="paths.title">Avec votre compte d'IA, ou avec le nôtre</h2>
+                    <p data-i18n="paths.description">
+                        Vous choisissez à l'achat, et vous pouvez changer ensuite. La protection est la même
+                        dans les deux cas : le fournisseur d'IA ne voit jamais vos données d'origine.
+                    </p>
+                </div>
+
+                <div class="paths-grid">
+                    <article class="path-card" data-reveal>
+                        <p class="path-tag" data-i18n="paths.byok.tag">VOTRE CLÉ</p>
+                        <h3 data-i18n="paths.byok.title">Votre compte d'IA, votre facture</h3>
+                        <p class="path-lead" data-i18n="paths.byok.lead">
+                            Vous payez la licence Doublure et continuez d'utiliser votre propre compte et votre
+                            modèle d'IA. Le nombre de jetons n'est pas compté.
+                        </p>
+                        <ul class="path-list">
+                            <li data-i18n="paths.byok.f1">
+                                Pas de limite de jetons : vous payez directement votre fournisseur
+                            </li>
+                            <li data-i18n="paths.byok.f2">
+                                Votre clé n'est ni enregistrée ni conservée
+                            </li>
+                            <li data-i18n="paths.byok.f3">
+                                Seules les adresses que vous autorisez peuvent être contactées
+                            </li>
+                        </ul>
+                        <p class="code-line" data-i18n="paths.byok.tech">Votre clé reste chez vous.</p>
+                    </article>
+
+                    <article class="path-card" data-reveal>
+                        <p class="path-tag" data-i18n="paths.prepaid.tag">CLÉ EN MAIN</p>
+                        <h3 data-i18n="paths.prepaid.title">Notre compte d'IA, des jetons au compteur</h3>
+                        <p class="path-lead" data-i18n="paths.prepaid.lead">
+                            Vous rechargez un stock de jetons et utilisez Doublure telle quelle. Nous nous
+                            occupons du compte d'IA et de la facture.
+                        </p>
+                        <ul class="path-list">
+                            <li data-i18n="paths.prepaid.f1">
+                                Le solde diminue à chaque requête, selon ce qui est réellement utilisé
+                            </li>
+                            <li data-i18n="paths.prepaid.f2">
+                                Alerte sous 10 % du stock acheté, visible dans chaque réponse
+                            </li>
+                            <li data-i18n="paths.prepaid.f3">
+                                Solde épuisé : la requête est bloquée et un lien de recharge s'affiche ; rien
+                                n'est envoyé
+                            </li>
+                        </ul>
+                        <p class="code-line" data-i18n="paths.prepaid.tech">Solde épuisé : rien n'est envoyé.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- FONCTIONNEMENT -->
+        <section id="how" class="how section" data-nav-theme="light">
+            <div class="container">
+                <div class="section-heading" data-reveal>
+                    <p class="eyebrow" data-i18n="how.eyebrow">FONCTIONNEMENT</p>
+                    <h2 data-i18n="how.title">Quatre étapes, rien à changer de votre côté</h2>
+                    <p data-i18n="how.description">
+                        Doublure se branche comme un service d'IA classique : votre outil de chat s'adresse à
+                        Doublure au lieu de s'adresser directement au fournisseur.
+                    </p>
+                </div>
+
+                <div class="steps-grid">
+                    <article class="step" data-reveal>
+                        <span class="step-number">01</span>
+                        <h3 data-i18n="how.step1.title">Votre accès</h3>
+                        <p data-i18n="how.step1.text">
+                            Vous recevez une clé de licence. À l'achat, vous choisissez d'utiliser votre propre
+                            compte d'IA ou notre service clé en main.
+                        </p>
+                    </article>
+                    <article class="step" data-reveal>
+                        <span class="step-number">02</span>
+                        <h3 data-i18n="how.step2.title">Repérage</h3>
+                        <p data-i18n="how.step2.text">
+                            Les informations sensibles sont reconnues dans le texte : IBAN, e-mail, téléphone,
+                            numéro de dossier, noms de personnes, lieux, dates.
+                        </p>
+                    </article>
+                    <article class="step" data-reveal>
+                        <span class="step-number">03</span>
+                        <h3 data-i18n="how.step3.title">Envoi à l'IA</h3>
+                        <p data-i18n="how.step3.text">
+                            Le message nettoyé part vers l'IA que vous avez choisie.
+                        </p>
+                    </article>
+                    <article class="step" data-reveal>
+                        <span class="step-number">04</span>
+                        <h3 data-i18n="how.step4.title">Retour à la normale</h3>
+                        <p data-i18n="how.step4.text">
+                            Les vraies informations réapparaissent dans la réponse, même quand elle s'affiche mot
+                            à mot. En clé en main, le solde est débité de ce qui a réellement été utilisé.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- DONNÉES MASQUÉES -->
+        <section id="data" class="data section" data-nav-theme="light">
+            <div class="container">
+                <div class="section-heading" data-reveal>
+                    <p class="eyebrow" data-i18n="data.eyebrow">CE QUI EST MASQUÉ</p>
+                    <h2 data-i18n="data.title">Ce que Doublure repère et remplace</h2>
+                    <p data-i18n="data.description">
+                        Deux méthodes travaillent ensemble : des formats reconnus automatiquement et des noms
+                        détectés dans la phrase. Chaque format est vérifié avant d'être masqué, pour ne pas
+                        abîmer du texte légitime.
+                    </p>
+                </div>
+
+                <ul class="detect-grid">
+                    <li class="detect" data-reveal>
+                        <span class="detect-tag">PERSON</span>
+                        <p data-i18n="data.item1">Noms de personnes (français et anglais)</p>
+                    </li>
+                    <li class="detect" data-reveal>
+                        <span class="detect-tag">LOCATION</span>
+                        <p data-i18n="data.item2">Villes et lieux (en option, un peu plus lent)</p>
+                    </li>
+                    <li class="detect" data-reveal>
+                        <span class="detect-tag">EMAIL</span>
+                        <p data-i18n="data.item3">Adresses e-mail</p>
+                    </li>
+                    <li class="detect" data-reveal>
+                        <span class="detect-tag">PHONE</span>
+                        <p data-i18n="data.item4">Numéros de téléphone suisses, français, européens et internationaux</p>
+                    </li>
+                    <li class="detect" data-reveal>
+                        <span class="detect-tag">IBAN</span>
+                        <p data-i18n="data.item5">IBAN (numéro vérifié)</p>
+                    </li>
+                    <li class="detect" data-reveal>
+                        <span class="detect-tag">SIRET</span>
+                        <p data-i18n="data.item6">SIRET (numéro vérifié)</p>
+                    </li>
+                    <li class="detect" data-reveal>
+                        <span class="detect-tag">DATE</span>
+                        <p data-i18n="data.item7">Dates et heures</p>
+                    </li>
+                    <li class="detect" data-reveal>
+                        <span class="detect-tag">DOSSIER · IP</span>
+                        <p data-i18n="data.item8">Numéros de dossier et adresses IP</p>
+                    </li>
+                </ul>
+
+                <p class="section-note" data-i18n="data.note">
+                    Un nombre à seize chiffres qui ne correspond à aucun numéro valide n'est pas masqué :
+                    c'est volontaire, pour ne pas abîmer le texte.
+                </p>
+            </div>
+        </section>
+
+        <!-- TARIFS -->
+        <section id="pricing" class="pricing section" data-nav-theme="dark">
+            <div class="container">
+                <div class="section-heading section-heading--center" data-reveal>
+                    <p class="eyebrow" data-i18n="pricing.eyebrow">TARIFS</p>
+                    <h2 data-i18n="pricing.title">Un prix par personne, pas au token</h2>
+                    <p data-i18n="pricing.description">
+                        Prix en dollars US, hors taxes. Vous gardez votre compte d'IA : Doublure ne prend aucune
+                        commission sur ce que vous consommez.
+                    </p>
+                </div>
+
+                <div class="plan-grid">
+                    <article class="plan" data-reveal>
+                        <p class="plan-name" data-i18n="pricing.free.name">Free</p>
+                        <p class="plan-price">
+                            <span data-i18n="pricing.free.price">0 $</span>
+                            <small data-i18n="pricing.free.period">pour toujours</small>
+                        </p>
+                        <p class="plan-tagline" data-i18n="pricing.free.tagline">
+                            Pour essayer tranquillement, chez vous.
+                        </p>
+                        <ul class="plan-list">
+                            <li data-i18n="pricing.free.f1">1 licence, 1 installation</li>
+                            <li data-i18n="pricing.free.f2">Reconnaissance des formats (IBAN, e-mail, téléphone)</li>
+                            <li data-i18n="pricing.free.f3">Interface DeerFlow incluse</li>
+                            <li data-i18n="pricing.free.f4">Installation guidée par la documentation</li>
+                        </ul>
+                        <a href="#contact" class="button button-secondary" data-i18n="pricing.free.cta">
+                            Nous contacter
+                        </a>
+                    </article>
+
+                    <article class="plan plan--featured" data-reveal>
+                        <p class="plan-badge" data-i18n="pricing.badge.byok">Le plus courant</p>
+                        <p class="plan-name" data-i18n="pricing.byok.name">Votre clé</p>
+                        <p class="plan-price">
+                            <span data-i18n="pricing.byok.price">20 $</span>
+                            <small data-i18n="pricing.byok.period">par mois</small>
+                        </p>
+                        <p class="plan-tagline" data-i18n="pricing.byok.tagline">
+                            La licence Doublure, sans jetons comptés.
+                        </p>
+                        <ul class="plan-list">
+                            <li data-i18n="pricing.byok.f1">Votre compte d'IA, votre consommation</li>
+                            <li data-i18n="pricing.byok.f2">Reconnaissance des noms, lieux et dates</li>
+                            <li data-i18n="pricing.byok.f3">Installation et configuration faites avec vous</li>
+                            <li data-i18n="pricing.byok.f4">Équipe : 15 $ par personne et par mois, dès 3 personnes</li>
+                        </ul>
+                        <a href="#contact" class="button button-primary" data-i18n="pricing.byok.cta">
+                            Prendre une licence
+                        </a>
+                    </article>
+
+                    <article class="plan" data-reveal>
+                        <p class="plan-name" data-i18n="pricing.prepaid.name">Clé en main</p>
+                        <p class="plan-price">
+                            <small data-i18n="pricing.prepaid.from">dès</small>
+                            <span data-i18n="pricing.prepaid.price">9 $</span>
+                            <small data-i18n="pricing.prepaid.period">le million de jetons</small>
+                        </p>
+                        <p class="plan-tagline" data-i18n="pricing.prepaid.tagline">
+                            Vous rechargez, nous nous occupons du reste.
+                        </p>
+                        <ul class="plan-list">
+                            <li data-i18n="pricing.prepaid.f1">Aucune configuration de compte d'IA</li>
+                            <li data-i18n="pricing.prepaid.f2">Solde visible dans chaque réponse</li>
+                            <li data-i18n="pricing.prepaid.f3">Recharge dès 9 $ pour 1 million de jetons ; 39 $
+                                pour 5 millions</li>
+                            <li data-i18n="pricing.prepaid.f4">Alerte à 10 % du stock, arrêt propre à zéro</li>
+                        </ul>
+                        <a href="#contact" class="button button-secondary" data-i18n="pricing.prepaid.cta">
+                            Acheter des jetons
+                        </a>
+                    </article>
+                </div>
+
+                <p class="pricing-note" data-i18n="pricing.footnote">
+                    Montants hors taxes, en dollars US. Paiement par carte bancaire ; les jetons achetés
+                    n'expirent pas.
+                </p>
+            </div>
+        </section>
+
+        <!-- PÉRIMÈTRE -->
+        <section id="scope" class="scope section" data-nav-theme="light">
+            <div class="container">
+                <div class="section-heading" data-reveal>
+                    <p class="eyebrow" data-i18n="scope.eyebrow">CE QUI EST COUVERT</p>
+                    <h2 data-i18n="scope.title">Ce que Doublure protège, et ce qu'il ne protège pas</h2>
+                </div>
+
+                <div class="scope-grid">
+                    <article class="scope-card" data-reveal>
+                        <h3 data-i18n="scope.protects.title">Protégé</h3>
+                        <ul class="tick-list">
+                            <li data-i18n="scope.protects.1">
+                                Les données personnelles écrites dans le texte des messages
+                            </li>
+                            <li data-i18n="scope.protects.2">
+                                Toute la conversation, y compris les réponses qui s'affichent progressivement
+                            </li>
+                            <li data-i18n="scope.protects.3">
+                                Le stockage : seuls les compteurs de jetons sont enregistrés
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="scope-card scope-card--muted" data-reveal>
+                        <h3 data-i18n="scope.limits.title">Non protégé</h3>
+                        <ul class="cross-list">
+                            <li data-i18n="scope.limits.1">Les pièces jointes : seuls les textes sont analysés</li>
+                            <li data-i18n="scope.limits.2">Les messages envoyés avant l'installation de Doublure</li>
+                            <li data-i18n="scope.limits.3">
+                                Les historiques du fournisseur d'IA et les sauvegardes de vos outils
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+
+                <p class="section-note" data-i18n="scope.note">
+                    Doublure réduit les risques, il ne les supprime pas : ni anonymisation parfaite, ni
+                    conformité garantie.
+                </p>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="faq section" data-nav-theme="light">
+            <div class="container">
+                <div class="section-heading" data-reveal>
+                    <p class="eyebrow" data-i18n="faq.eyebrow">QUESTIONS FRÉQUENTES</p>
+                                            <h2 data-i18n="faq.title">Les questions qu'on nous pose avant de commencer</h2>
+                </div>
+
+                <div class="faq-list">
+                    <details class="faq-item" data-reveal>
+                        <summary data-i18n="faq.q1">Faut-il changer de fournisseur d'IA ?</summary>
+                        <p data-i18n="faq.a1">
+                            Non. Avec votre clé, vous gardez votre compte et votre modèle d'IA. En clé en main,
+                            nous nous occupons du compte à votre place.
+                        </p>
+                    </details>
+                    <details class="faq-item" data-reveal>
+                        <summary data-i18n="faq.q2">Où est installé Doublure ?</summary>
+                        <p data-i18n="faq.a2">
+                            Chez vous, sur votre machine ou votre serveur. Seul Doublure communique avec
+                            l'extérieur : le reste de vos outils n'est pas exposé.
+                        </p>
+                    </details>
+                    <details class="faq-item" data-reveal>
+                        <summary data-i18n="faq.q3">Que se passe-t-il si la détection ne démarre pas ?</summary>
+                        <p data-i18n="faq.a3">
+                            Doublure refuse de fonctionner plutôt que d'envoyer des données non protégées. Vous
+                            pouvez aussi choisir un mode allégé, en connaissance de cause.
+                        </p>
+                    </details>
+                    <details class="faq-item" data-reveal>
+                        <summary data-i18n="faq.q4">Mes données sont-elles conservées ?</summary>
+                        <p data-i18n="faq.a4">
+                            Non. Les correspondances entre vos données et les codes restent en mémoire, le temps de
+                            la session, puis disparaissent. Seuls les compteurs de jetons sont enregistrés.
+                        </p>
+                    </details>
+                    <details class="faq-item" data-reveal>
+                        <summary data-i18n="faq.q5">Est-ce compatible avec mes outils ?</summary>
+                        <p data-i18n="faq.a5">
+                            Oui. Doublure se comporte comme un service d'IA classique : la plupart des outils
+                            compatibles fonctionnent sans modification. L'interface DeerFlow est fournie avec.
+                        </p>
+                    </details>
+                    <details class="faq-item" data-reveal>
+                        <summary data-i18n="faq.q6">Que comprend l'installation accompagnée ?</summary>
+                        <p data-i18n="faq.a6">
+                            Le script, la configuration, les modèles de détection, la création des clés et un test
+                            complet de bout en bout. Nous mettons en service avec vous.
+                        </p>
+                    </details>
+                    <details class="faq-item" data-reveal>
+                        <summary data-i18n="faq.q7">Que se passe-t-il quand mon solde est vide ?</summary>
+                        <p data-i18n="faq.a7">
+                            La requête est bloquée avant d'atteindre l'IA : un message vous propose de recharger.
+                            Aucun jeton n'est consommé, aucune donnée n'est envoyée.
+                        </p>
+                    </details>
+                    <details class="faq-item" data-reveal>
+                        <summary data-i18n="faq.q8">Puis-je changer de formule ?</summary>
+                        <p data-i18n="faq.a8">
+                            Oui, à tout moment : vous passez de votre clé à la clé en main (ou l'inverse) sans
+                            réinstaller, et votre licence reste la même.
+                        </p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="cta-band section" data-nav-theme="dark">
+            <div class="container">
+                <div class="cta-box" data-reveal>
+                    <div class="cta-content">
+                        <p class="eyebrow" data-i18n="contact.eyebrow">PASSER À LA PRATIQUE</p>
+                        <h2 data-i18n="contact.title">Testons Doublure sur une vraie conversation</h2>
+                        <p data-i18n="contact.description">
+                            Une question technique, un devis pour votre équipe, ou une démonstration sur vos
+                            propres messages : écrivez-nous.
+                        </p>
+                        <form class="contact-form" data-contact-form novalidate>
+                            <div class="hp-field" aria-hidden="true">
+                                <label for="contact-website">Ne pas remplir</label>
+                                <input id="contact-website" name="company_website" type="text" tabindex="-1"
+                                    autocomplete="off" />
+                            </div>
+
+                            <div class="field">
+                                <label for="contact-name" data-i18n="contact.form.name">Nom</label>
+                                <input id="contact-name" name="name" type="text" autocomplete="name" required
+                                    minlength="2" />
+                                <p class="field-error" data-error-for="name" role="alert"></p>
+                            </div>
+
+                            <div class="field">
+                                <label for="contact-email" data-i18n="contact.form.email">E-mail</label>
+                                <input id="contact-email" name="email" type="email" autocomplete="email"
+                                    required />
+                                <p class="field-error" data-error-for="email" role="alert"></p>
+                            </div>
+
+                            <div class="field">
+                                <label for="contact-message" data-i18n="contact.form.message">Votre message</label>
+                                <textarea id="contact-message" name="message" required minlength="20"
+                                    data-i18n-placeholder="contact.form.messagePlaceholder"></textarea>
+                                <p class="field-error" data-error-for="message" role="alert"></p>
+                            </div>
+
+                            <label class="form-consent" for="contact-consent">
+                                <input id="contact-consent" name="consent" type="checkbox" required />
+                                <span data-i18n="contact.form.consent">J'accepte que ces informations soient
+                                    utilisées pour me répondre.</span>
+                            </label>
+                            <p class="field-error" data-error-for="consent" role="alert"></p>
+
+                            <button type="submit" class="button button-primary" data-i18n="contact.form.submit">
+                                Envoyer le message
+                            </button>
+
+                            <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+
+                            <p class="form-direct">
+                                <span data-i18n="contact.direct">Ou directement :</span>
+                                <a href="#" data-action="email" data-i18n="contact.emailButton">Écrire un
+e-mail</a>
+                                ·
+                                <a href="#" data-action="whatsapp" data-i18n="contact.whatsappButton">WhatsApp</a>
+                            </p>
+                        </form>
+                        <p class="cta-note" data-i18n="contact.note">
+                            Réponse sous 24 h ouvrées. Aucune donnée de client n'est nécessaire pour un premier
+                            échange.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer" data-nav-theme="dark">
+        <div class="container footer-content" data-reveal>
+            <div class="footer-brand">
+                <a href="#" class="logo" data-action="top">Doublure<span>.</span></a>
+                <p data-i18n="footer.note">
+                    Doublure réduit l'exposition des données personnelles dans les messages envoyés à l'IA. Ce
+                    n'est pas une garantie de conformité.
+                </p>
+            </div>
+            <nav class="footer-links" aria-label="Pied de page">
+                <a href="#how" data-i18n="nav.how">Comment ça marche</a>
+                <a href="#pricing" data-i18n="nav.pricing">Tarifs</a>
+                <a href="#faq" data-i18n="nav.faq">FAQ</a>
+                <a href="confidentialite.html" data-i18n="footer.privacy">Confidentialité</a>
+                <a href="conditions-generales.html" data-i18n="footer.terms">Conditions générales</a>
+                <button type="button" data-action="consent" data-i18n="footer.cookies">Cookies</button>
+            </nav>
+            <p class="footer-legal">
+                © <span id="current-year"></span> Doublure.
+                <span data-i18n="footer.rights">Tous droits réservés.</span>
+            </p>
+        </div>
+    </footer>
+
+    <div class="cookie-banner" data-cookie-banner hidden role="region" aria-label="Cookies">
+        <div class="cookie-text">
+            <strong data-i18n="cookie.title">Cookies et mesure d'audience</strong>
+            <p>
+                <span data-i18n="cookie.text">Aucun cookie publicitaire. Avec votre accord seulement, une mesure
+                    d'audience anonyme nous aide à améliorer les pages.</span>
+                <a href="confidentialite.html" data-i18n="cookie.more">En savoir plus</a>
+            </p>
+        </div>
+        <div class="cookie-actions">
+            <button type="button" class="button button-secondary" data-consent="denied"
+                data-i18n="cookie.refuse">Refuser</button>
+            <button type="button" class="button button-primary" data-consent="granted"
+                data-i18n="cookie.accept">Accepter</button>
+        </div>
+    </div>
+
+    <script src="js/main.js?v=20261114" defer></script>
+</body>
+
+</html>

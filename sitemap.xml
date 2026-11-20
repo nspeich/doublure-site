@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Remplacez https://doublure.ch par le domaine réel du site (aussi dans robots.txt,
+     les balises <link rel="canonical"> et .htaccess). -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://doublure.ch/</loc>
+        <lastmod>2026-11-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://doublure.ch/confidentialite.html</loc>
+        <lastmod>2026-11-14</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    <url>
+        <loc>https://doublure.ch/conditions-generales.html</loc>
+        <lastmod>2026-11-14</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+</urlset>

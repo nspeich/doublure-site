@@ -1,0 +1,686 @@
+{
+  "fr": {
+    "nav": {
+      "how": "Comment ça marche",
+      "paths": "Formules",
+      "pricing": "Tarifs",
+      "faq": "FAQ",
+      "contact": "Demander une démo"
+    },
+    "hero": {
+      "eyebrow": "Protégez les données de vos clients",
+      "title": "Profitez de l'IA sans lui confier les données de vos clients.",
+      "description": "Doublure se place entre votre outil de chat et l'IA. Avant l'envoi, les noms, IBAN, e-mails et numéros sont remplacés par des codes ; ils réapparaissent dans la réponse, chez vous. L'IA ne voit jamais les vraies informations.",
+      "primaryButton": "Demander une démo",
+      "secondaryButton": "Comment ça marche",
+      "meta": {
+        "1": "Installé chez vous",
+        "2": "Compatible avec vos outils",
+        "3": "Rien ne part sans protection",
+        "4": "Avec votre clé ou la nôtre"
+      },
+      "card1": { "value": "IBAN", "label": "MASQUÉ" },
+      "card2": { "value": "NOM", "label": "→ CODE" },
+      "card3": { "value": "RÉPONSE", "label": "RESTITUÉE" }
+    },
+    "problem": {
+      "eyebrow": "LE PROBLÈME",
+      "title": "Chaque message envoyé à l'IA est une fuite possible",
+      "description": "Un dossier client, une adresse, un IBAN collés dans le chat : l'information part chez le fournisseur d'IA, s'ajoute à ses historiques, et vous ne savez plus combien de temps elle y reste.",
+      "1": {
+        "title": "Vos données partent en clair",
+        "text": "Nom, adresse, IBAN, numéro de dossier : tout ce que vous tapez dans un chat est envoyé tel quel."
+      },
+      "2": {
+        "title": "Elles restent chez le fournisseur",
+        "text": "Chaque fournisseur a ses règles de conservation. Elles changent, et ne se négocient pas au cas par cas."
+      },
+      "3": {
+        "title": "Chacun trouve un contournement",
+        "text": "Sans outil simple, les équipes recopient leurs données ailleurs, et le problème revient par la porte de derrière."
+      }
+    },
+    "demo": {
+      "eyebrow": "AVANT / APRÈS",
+      "title": "Ce que vous tapez, ce que l'IA reçoit",
+      "description": "Le remplacement se fait juste avant l'envoi à l'IA. La réponse revient avec vos vraies informations.",
+      "outgoing": {
+        "label": "Ce que reçoit l'IA",
+        "text": "Mon IBAN est [[IBAN_1]] et mon e-mail est [[EMAIL_1]]. Reformule ces informations pour mon conseiller."
+      },
+      "incoming": {
+        "label": "Ce que vous lisez à l'écran",
+        "text": "Mon IBAN est CH93 0076 2011 6238 5295 7 et mon e-mail est test@exemple.ch. Voici une reformulation…"
+      },
+      "note": "Les correspondances restent en mémoire, le temps de la session : rien de sensible n'est écrit sur le disque. Si Doublure redémarre en pleine conversation, les codes ne sont plus rétablis."
+    },
+    "how": {
+      "eyebrow": "FONCTIONNEMENT",
+      "title": "Quatre étapes, rien à changer de votre côté",
+      "description": "Doublure se branche comme un service d'IA classique : votre outil de chat s'adresse à Doublure au lieu de s'adresser directement au fournisseur.",
+      "step1": {
+        "title": "Votre accès",
+        "text": "Vous recevez une clé de licence. À l'achat, vous choisissez d'utiliser votre propre compte d'IA ou notre service clé en main."
+      },
+      "step2": {
+        "title": "Repérage",
+        "text": "Les informations sensibles sont reconnues dans le texte : IBAN, e-mail, téléphone, numéro de dossier, noms de personnes, lieux, dates."
+      },
+      "step3": {
+        "title": "Envoi à l'IA",
+        "text": "Le message nettoyé part vers l'IA que vous avez choisie."
+      },
+      "step4": {
+        "title": "Retour à la normale",
+        "text": "Les vraies informations réapparaissent dans la réponse, même quand elle s'affiche mot à mot. En clé en main, le solde est débité de ce qui a réellement été utilisé."
+      }
+    },
+    "data": {
+      "eyebrow": "CE QUI EST MASQUÉ",
+      "title": "Ce que Doublure repère et remplace",
+      "description": "Deux méthodes travaillent ensemble : des formats reconnus automatiquement et des noms détectés dans la phrase. Chaque format est vérifié avant d'être masqué, pour ne pas abîmer du texte légitime.",
+      "item1": "Noms de personnes (français et anglais)",
+      "item2": "Villes et lieux (en option, un peu plus lent)",
+      "item3": "Adresses e-mail",
+      "item4": "Numéros de téléphone suisses, français, européens et internationaux",
+      "item5": "IBAN (numéro vérifié)",
+      "item6": "SIRET (numéro vérifié)",
+      "item7": "Dates et heures",
+      "item8": "Numéros de dossier et adresses IP",
+      "note": "Un nombre à seize chiffres qui ne correspond à aucun numéro valide n'est pas masqué : c'est volontaire, pour ne pas abîmer le texte."
+    },
+    "paths": {
+      "eyebrow": "DEUX FORMULES",
+      "title": "Avec votre compte d'IA, ou avec le nôtre",
+      "description": "Vous choisissez à l'achat, et vous pouvez changer ensuite. La protection est la même dans les deux cas : le fournisseur d'IA ne voit jamais vos données d'origine.",
+      "byok": {
+        "tag": "VOTRE CLÉ",
+        "title": "Votre compte d'IA, votre facture",
+        "lead": "Vous payez la licence Doublure et continuez d'utiliser votre propre compte et votre modèle d'IA. Le nombre de jetons n'est pas compté.",
+        "f1": "Pas de limite de jetons : vous payez directement votre fournisseur",
+        "f2": "Votre clé n'est ni enregistrée ni conservée",
+        "f3": "Seules les adresses que vous autorisez peuvent être contactées",
+        "tech": "Votre clé reste chez vous."
+      },
+      "prepaid": {
+        "tag": "CLÉ EN MAIN",
+        "title": "Notre compte d'IA, des jetons au compteur",
+        "lead": "Vous rechargez un stock de jetons et utilisez Doublure telle quelle. Nous nous occupons du compte d'IA et de la facture.",
+        "f1": "Le solde diminue à chaque requête, selon ce qui est réellement utilisé",
+        "f2": "Alerte sous 10 % du stock, visible dans chaque réponse",
+        "f3": "Solde épuisé : la requête est bloquée et un lien de recharge s'affiche ; rien n'est envoyé",
+        "tech": "Solde épuisé : rien n'est envoyé."
+      }
+    },
+    "pricing": {
+      "eyebrow": "TARIFS",
+      "title": "Un prix par personne, pas au token",
+      "description": "Prix en dollars US, hors taxes. Vous gardez votre compte d'IA : Doublure ne prend aucune commission sur ce que vous consommez.",
+      "badge": { "byok": "Le plus courant" },
+      "free": {
+        "name": "Free",
+        "price": "0 $",
+        "period": "pour toujours",
+        "tagline": "Pour essayer tranquillement, chez vous.",
+        "f1": "1 licence, 1 installation",
+        "f2": "Reconnaissance des formats (IBAN, e-mail, téléphone)",
+        "f3": "Interface DeerFlow incluse",
+        "f4": "Installation guidée par la documentation",
+        "cta": "Nous contacter"
+      },
+      "byok": {
+        "name": "Votre clé",
+        "price": "20 $",
+        "period": "par mois",
+        "tagline": "La licence Doublure, sans jetons comptés.",
+        "f1": "Votre compte d'IA, votre consommation",
+        "f2": "Reconnaissance des noms, lieux et dates",
+        "f3": "Installation et configuration faites avec vous",
+        "f4": "Équipe : 15 $ par personne et par mois, dès 3 personnes",
+        "cta": "Prendre une licence"
+      },
+      "prepaid": {
+        "name": "Clé en main",
+        "from": "dès",
+        "price": "9 $",
+        "period": "le million de jetons",
+        "tagline": "Vous rechargez, nous nous occupons du reste.",
+        "f1": "Aucune configuration de compte d'IA",
+        "f2": "Solde visible dans chaque réponse",
+        "f3": "Recharge dès 9 $ pour 1 million de jetons ; 39 $ pour 5 millions",
+        "f4": "Alerte à 10 % du stock, arrêt propre à zéro",
+        "cta": "Acheter des jetons"
+      },
+      "footnote": "Montants hors taxes, en dollars US. Paiement par carte bancaire ; les jetons achetés n'expirent pas."
+    },
+    "scope": {
+      "eyebrow": "CE QUI EST COUVERT",
+      "title": "Ce que Doublure protège, et ce qu'il ne protège pas",
+      "protects": {
+        "title": "Protégé",
+        "1": "Les données personnelles écrites dans le texte des messages",
+        "2": "Toute la conversation, y compris les réponses qui s'affichent progressivement",
+        "3": "Le stockage : seuls les compteurs de jetons sont enregistrés"
+      },
+      "limits": {
+        "title": "Non protégé",
+        "1": "Les pièces jointes : seuls les textes sont analysés",
+        "2": "Les messages envoyés avant l'installation de Doublure",
+        "3": "Les historiques du fournisseur d'IA et les sauvegardes de vos outils"
+      },
+      "note": "Doublure réduit les risques, il ne les supprime pas : ni anonymisation parfaite, ni conformité garantie."
+    },
+    "faq": {
+      "eyebrow": "QUESTIONS FRÉQUENTES",
+      "title": "Les questions qu'on nous pose avant de commencer",
+      "q1": "Faut-il changer de fournisseur d'IA ?",
+      "a1": "Non. Avec votre clé, vous gardez votre compte et votre modèle d'IA. En clé en main, nous nous occupons du compte à votre place.",
+      "q2": "Où est installé Doublure ?",
+      "a2": "Chez vous, sur votre machine ou votre serveur. Seul Doublure communique avec l'extérieur : le reste de vos outils n'est pas exposé.",
+      "q3": "Que se passe-t-il si la détection ne démarre pas ?",
+      "a3": "Doublure refuse de fonctionner plutôt que d'envoyer des données non protégées. Vous pouvez aussi choisir un mode allégé, en connaissance de cause.",
+      "q4": "Mes données sont-elles conservées ?",
+      "a4": "Non. Les correspondances entre vos données et les codes restent en mémoire, le temps de la session, puis disparaissent. Seuls les compteurs de jetons sont enregistrés.",
+      "q5": "Est-ce compatible avec mes outils ?",
+      "a5": "Oui. Doublure se comporte comme un service d'IA classique : la plupart des outils compatibles fonctionnent sans modification. L'interface DeerFlow est fournie avec.",
+      "q6": "Que comprend l'installation accompagnée ?",
+      "a6": "Le script, la configuration, les modèles de détection, la création des clés et un test complet de bout en bout. Nous mettons en service avec vous.",
+      "q7": "Que se passe-t-il quand mon solde est vide ?",
+      "a7": "La requête est bloquée avant d'atteindre l'IA : un message vous propose de recharger. Aucun jeton n'est consommé, aucune donnée n'est envoyée.",
+      "q8": "Puis-je changer de formule ?",
+      "a8": "Oui, à tout moment : vous passez de votre clé à la clé en main (ou l'inverse) sans réinstaller, et votre licence reste la même."
+    },
+    "contact": {
+      "eyebrow": "PASSER À LA PRATIQUE",
+      "title": "Testons Doublure sur une vraie conversation",
+      "description": "Une question technique, un devis pour votre équipe, ou une démonstration sur vos propres messages : écrivez-nous.",
+      "emailButton": "Écrire un e-mail",
+      "whatsappButton": "WhatsApp",
+      "direct": "Ou directement :",
+      "note": "Réponse sous 24 h ouvrées. Aucune donnée de client n'est nécessaire pour un premier échange.",
+      "form": {
+        "name": "Nom",
+        "email": "E-mail",
+        "message": "Votre message",
+        "messagePlaceholder": "Quelques lignes sur votre besoin (20 caractères minimum).",
+        "consent": "J'accepte que ces informations soient utilisées pour me répondre.",
+        "submit": "Envoyer le message",
+        "success": "Message prêt : votre logiciel de messagerie s'ouvre pour l'envoi.",
+        "errorName": "Indiquez votre nom (2 caractères minimum).",
+        "errorEmail": "Cette adresse e-mail ne semble pas valide.",
+        "errorMessage": "Décrivez votre besoin en 20 caractères au moins.",
+        "errorConsent": "Cochez cette case pour que nous puissions vous répondre."
+      }
+    },
+    "cookie": {
+      "title": "Cookies et mesure d'audience",
+      "text": "Aucun cookie publicitaire. Avec votre accord seulement, une mesure d'audience anonyme nous aide à améliorer les pages.",
+      "more": "En savoir plus",
+      "refuse": "Refuser",
+      "accept": "Accepter"
+    },
+    "footer": {
+      "note": "Doublure réduit l'exposition des données personnelles dans les messages envoyés à l'IA. Ce n'est pas une garantie de conformité.",
+      "privacy": "Confidentialité",
+      "terms": "Conditions générales",
+      "cookies": "Cookies",
+      "rights": "Tous droits réservés."
+    }
+  },
+  "en": {
+    "nav": {
+      "how": "How it works",
+      "paths": "Options",
+      "pricing": "Pricing",
+      "faq": "FAQ",
+      "contact": "Request a demo"
+    },
+    "hero": {
+      "eyebrow": "PROTECT YOUR CLIENTS' DATA",
+      "title": "Use AI without handing over your clients' data.",
+      "description": "Doublure sits between your chat tool and the AI. Before anything is sent, names, IBANs, emails and phone numbers are swapped for codes; they reappear in the answer, on your side. The AI never sees the real information.",
+      "primaryButton": "Request a demo",
+      "secondaryButton": "How it works",
+      "meta": {
+        "1": "Installed on your side",
+        "2": "Works with your tools",
+        "3": "Nothing leaves unprotected",
+        "4": "Your key or ours"
+      },
+      "card1": { "value": "IBAN", "label": "MASKED" },
+      "card2": { "value": "NAME", "label": "→ CODE" },
+      "card3": { "value": "ANSWER", "label": "RESTORED" }
+    },
+    "problem": {
+      "eyebrow": "THE PROBLEM",
+      "title": "Every message sent to AI is a possible leak",
+      "description": "A client file, an address, an IBAN pasted into the chat: the information leaves for the AI provider, ends up in its logs, and you no longer know how long it stays there.",
+      "1": {
+        "title": "Your data leaves in clear text",
+        "text": "Name, address, IBAN, case number: everything you type into a chat is sent as is."
+      },
+      "2": {
+        "title": "It stays with the provider",
+        "text": "Every provider has its own retention rules. They change, and they are not negotiated case by case."
+      },
+      "3": {
+        "title": "Everyone finds a way around it",
+        "text": "Without a simple tool, teams copy their data elsewhere, and the problem comes back through the back door."
+      }
+    },
+    "demo": {
+      "eyebrow": "BEFORE / AFTER",
+      "title": "What you type, what the AI receives",
+      "description": "Replacement happens right before the call to the AI. The answer comes back with your real information.",
+      "outgoing": {
+        "label": "What the AI receives",
+        "text": "My IBAN is [[IBAN_1]] and my email is [[EMAIL_1]]. Rewrite this for my advisor."
+      },
+      "incoming": {
+        "label": "What you read on screen",
+        "text": "My IBAN is CH93 0076 2011 6238 5295 7 and my email is test@example.ch. Here is a rewrite…"
+      },
+      "note": "Matches stay in memory for the session only: nothing sensitive is written to disk. If Doublure restarts mid-conversation, the codes are no longer restored."
+    },
+    "how": {
+      "eyebrow": "HOW IT WORKS",
+      "title": "Four steps, nothing to change on your side",
+      "description": "Doublure plugs in like any other AI service: your chat tool talks to Doublure instead of talking straight to the provider.",
+      "step1": {
+        "title": "Your access",
+        "text": "You receive a licence key. At purchase you choose to use your own AI account or our managed service."
+      },
+      "step2": {
+        "title": "Detection",
+        "text": "Sensitive details are recognised in the text: IBAN, email, phone, case number, people's names, places, dates."
+      },
+      "step3": {
+        "title": "Sent to the AI",
+        "text": "The cleaned message goes to the AI you chose."
+      },
+      "step4": {
+        "title": "Back to normal",
+        "text": "Real details reappear in the answer, even as it streams in word by word. In managed mode, the balance is debited for what was actually used."
+      }
+    },
+    "data": {
+      "eyebrow": "WHAT GETS MASKED",
+      "title": "What Doublure finds and replaces",
+      "description": "Two methods work together: formats recognised automatically and names detected in the sentence. Each format is checked before being masked, so legitimate text is not damaged.",
+      "item1": "People's names (French and English)",
+      "item2": "Cities and places (optional, slightly slower)",
+      "item3": "Email addresses",
+      "item4": "Swiss, French, European and international phone numbers",
+      "item5": "IBAN (number verified)",
+      "item6": "SIRET (number verified)",
+      "item7": "Dates and times",
+      "item8": "Case numbers and IP addresses",
+      "note": "A sixteen-digit number that matches no valid number is left alone, on purpose, so the text is not damaged."
+    },
+    "paths": {
+      "eyebrow": "TWO OPTIONS",
+      "title": "With your AI account, or with ours",
+      "description": "You choose at purchase and can switch later. Protection is the same either way: the AI provider never sees your original data.",
+      "byok": {
+        "tag": "YOUR KEY",
+        "title": "Your AI account, your bill",
+        "lead": "You pay the Doublure licence and keep using your own AI account and model. Tokens are not counted.",
+        "f1": "No token limit: you pay your provider directly",
+        "f2": "Your key is neither recorded nor stored",
+        "f3": "Only the addresses you allow can be contacted",
+        "tech": "Your key stays with you."
+      },
+      "prepaid": {
+        "tag": "MANAGED",
+        "title": "Our AI account, tokens on the meter",
+        "lead": "You top up a stock of tokens and use Doublure as is. We handle the AI account and the bill.",
+        "f1": "The balance drops with each request, based on what is actually used",
+        "f2": "Alert below 10% of the stock, visible in every response",
+        "f3": "Balance empty: the request is blocked and a top-up link appears; nothing is sent",
+        "tech": "Balance empty: nothing is sent."
+      }
+    },
+    "pricing": {
+      "eyebrow": "PRICING",
+      "title": "Priced per person, not per token",
+      "description": "Prices in US dollars, excluding taxes. You keep your AI account: Doublure takes no commission on what you spend.",
+      "badge": { "byok": "Most popular" },
+      "free": {
+        "name": "Free",
+        "price": "$0",
+        "period": "forever",
+        "tagline": "To try it quietly, on your own machine.",
+        "f1": "1 licence, 1 install",
+        "f2": "Format detection (IBAN, email, phone)",
+        "f3": "DeerFlow interface included",
+        "f4": "Install guided by the documentation",
+        "cta": "Contact us"
+      },
+      "byok": {
+        "name": "Your key",
+        "price": "$20",
+        "period": "per month",
+        "tagline": "The Doublure licence, no tokens counted.",
+        "f1": "Your AI account, your consumption",
+        "f2": "Detection of names, places and dates",
+        "f3": "Installation and setup done with you",
+        "f4": "Team: $15 per person per month, from 3 people",
+        "cta": "Get a licence"
+      },
+      "prepaid": {
+        "name": "Managed",
+        "from": "from",
+        "price": "$9",
+        "period": "per million tokens",
+        "tagline": "You top up, we handle the rest.",
+        "f1": "No AI account to configure",
+        "f2": "Balance visible in every response",
+        "f3": "Top up from $9 for 1M tokens; $39 for 5M",
+        "f4": "Alert at 10% of the stock, clean stop at zero",
+        "cta": "Buy tokens"
+      },
+      "footnote": "Prices exclude taxes, billed in USD. Card payment; purchased tokens do not expire."
+    },
+    "scope": {
+      "eyebrow": "WHAT IS COVERED",
+      "title": "What Doublure protects, and what it does not",
+      "protects": {
+        "title": "Protected",
+        "1": "Personal data written in the message text",
+        "2": "The whole conversation, including answers that appear as they are written",
+        "3": "Storage: only token counters are recorded"
+      },
+      "limits": {
+        "title": "Not protected",
+        "1": "Attachments: only text is analysed",
+        "2": "Messages sent before Doublure was installed",
+        "3": "The AI provider's logs and your tools' backups"
+      },
+      "note": "Doublure reduces risk; it does not remove it: neither perfect anonymisation nor guaranteed compliance."
+    },
+    "faq": {
+      "eyebrow": "FREQUENTLY ASKED",
+      "title": "The questions we get before starting",
+      "q1": "Do I need to change AI provider?",
+      "a1": "No. With your key, you keep your account and your AI model. In managed mode, we take care of the account for you.",
+      "q2": "Where is Doublure installed?",
+      "a2": "On your side, on your machine or your server. Only Doublure talks to the outside; the rest of your tools is not exposed.",
+      "q3": "What if detection fails to start?",
+      "a3": "Doublure refuses to run rather than send unprotected data. You can also choose a lighter mode, knowingly.",
+      "q4": "Is my data kept?",
+      "a4": "No. The links between your data and the codes stay in memory for the session, then disappear. Only token counters are recorded.",
+      "q5": "Does it work with my tools?",
+      "a5": "Yes. Doublure behaves like a standard AI service: most compatible tools work unchanged. The DeerFlow interface is included.",
+      "q6": "What does the handled installation cover?",
+      "a6": "The script, configuration, detection models, key generation and a full end-to-end test. We put it into service with you.",
+      "q7": "What happens when my balance is empty?",
+      "a7": "The request is blocked before it reaches the AI and a message offers a top-up. No token is spent, no data is sent.",
+      "q8": "Can I switch option?",
+      "a8": "Yes, at any time: move from your key to managed (or back) without reinstalling, and your licence stays the same."
+    },
+    "contact": {
+      "eyebrow": "GET STARTED",
+      "title": "Let's try Doublure on a real conversation",
+      "description": "A technical question, a quote for your team, or a demo on your own messages: get in touch.",
+      "emailButton": "Send an email",
+      "whatsappButton": "WhatsApp",
+      "direct": "Or directly:",
+      "note": "Reply within one business day. No client data is needed for a first exchange.",
+      "form": {
+        "name": "Name",
+        "email": "Email",
+        "message": "Your message",
+        "messagePlaceholder": "A few lines about what you need (20 characters minimum).",
+        "consent": "I agree that this information may be used to reply to me.",
+        "submit": "Send message",
+        "success": "Message ready: your email app opens to send it.",
+        "errorName": "Please enter your name (2 characters minimum).",
+        "errorEmail": "This email address does not look valid.",
+        "errorMessage": "Describe your need in at least 20 characters.",
+        "errorConsent": "Tick this box so we can reply to you."
+      }
+    },
+    "cookie": {
+      "title": "Cookies and audience measurement",
+      "text": "No advertising cookies. Only with your consent, anonymous audience measurement helps us improve the pages.",
+      "more": "Learn more",
+      "refuse": "Decline",
+      "accept": "Accept"
+    },
+    "footer": {
+      "note": "Doublure reduces the exposure of personal data in messages sent to AI. It is not a compliance guarantee.",
+      "privacy": "Privacy",
+      "terms": "Terms of service",
+      "cookies": "Cookies",
+      "rights": "All rights reserved."
+    }
+  },
+  "es": {
+    "nav": {
+      "how": "Cómo funciona",
+      "paths": "Modalidades",
+      "pricing": "Precios",
+      "faq": "Preguntas",
+      "contact": "Solicitar una demo"
+    },
+    "hero": {
+      "eyebrow": "PROTEGE LOS DATOS DE TUS CLIENTES",
+      "title": "Usa la IA sin entregarle los datos de tus clientes.",
+      "description": "Doublure se coloca entre tu herramienta de chat y la IA. Antes del envío, los nombres, IBAN, correos y teléfonos se sustituyen por códigos; vuelven a aparecer en la respuesta, en tu lado. La IA nunca ve la información real.",
+      "primaryButton": "Solicitar una demo",
+      "secondaryButton": "Cómo funciona",
+      "meta": {
+        "1": "Instalado en tu lado",
+        "2": "Compatible con tus herramientas",
+        "3": "Nada sale sin protección",
+        "4": "Con tu clave o la nuestra"
+      },
+      "card1": { "value": "IBAN", "label": "OCULTO" },
+      "card2": { "value": "NOMBRE", "label": "→ CÓDIGO" },
+      "card3": { "value": "RESPUESTA", "label": "RESTITUIDA" }
+    },
+    "problem": {
+      "eyebrow": "EL PROBLEMA",
+      "title": "Cada mensaje enviado a la IA es una posible filtración",
+      "description": "Un expediente de cliente, una dirección, un IBAN pegados en el chat: la información sale hacia el proveedor de IA, se suma a sus registros y ya no sabes cuánto tiempo permanece allí.",
+      "1": {
+        "title": "Tus datos salen en claro",
+        "text": "Nombre, dirección, IBAN, número de expediente: todo lo que escribes en un chat se envía tal cual."
+      },
+      "2": {
+        "title": "Se quedan en el proveedor",
+        "text": "Cada proveedor tiene sus reglas de conservación. Cambian y no se negocian caso por caso."
+      },
+      "3": {
+        "title": "Cada uno busca una salida",
+        "text": "Sin una herramienta sencilla, los equipos copian sus datos a otro sitio y el problema vuelve por la puerta de atrás."
+      }
+    },
+    "demo": {
+      "eyebrow": "ANTES / DESPUÉS",
+      "title": "Lo que escribes y lo que recibe la IA",
+      "description": "La sustitución se aplica justo antes del envío a la IA. La respuesta vuelve con tus datos reales.",
+      "outgoing": {
+        "label": "Lo que recibe la IA",
+        "text": "Mi IBAN es [[IBAN_1]] y mi correo es [[EMAIL_1]]. Reformula esta información para mi asesor."
+      },
+      "incoming": {
+        "label": "Lo que lees en pantalla",
+        "text": "Mi IBAN es CH93 0076 2011 6238 5295 7 y mi correo es test@ejemplo.ch. Aquí tienes una reformulación…"
+      },
+      "note": "Las correspondencias permanecen en memoria, durante la sesión: nada sensible se escribe en el disco. Si Doublure se reinicia en mitad de una conversación, los códigos ya no se restituyen."
+    },
+    "how": {
+      "eyebrow": "CÓMO FUNCIONA",
+      "title": "Cuatro pasos, sin cambios de tu lado",
+      "description": "Doublure se conecta como cualquier servicio de IA: tu herramienta de chat se dirige a Doublure en lugar de al proveedor.",
+      "step1": {
+        "title": "Tu acceso",
+        "text": "Recibes una clave de licencia. Al comprar eliges usar tu propia cuenta de IA o nuestro servicio gestionado."
+      },
+      "step2": {
+        "title": "Detección",
+        "text": "Los datos sensibles se reconocen en el texto: IBAN, correo, teléfono, número de expediente, nombres de personas, lugares, fechas."
+      },
+      "step3": {
+        "title": "Envío a la IA",
+        "text": "El mensaje ya limpio se envía a la IA que hayas elegido."
+      },
+      "step4": {
+        "title": "Vuelta a la normalidad",
+        "text": "Los datos reales reaparecen en la respuesta, incluso cuando se muestra palabra a palabra. En modalidad gestionada, el saldo se descuenta según lo realmente utilizado."
+      }
+    },
+    "data": {
+      "eyebrow": "LO QUE SE OCULTA",
+      "title": "Lo que Doublure detecta y sustituye",
+      "description": "Dos métodos trabajan juntos: formatos reconocidos automáticamente y nombres detectados en la frase. Cada formato se verifica antes de ocultarlo, para no estropear texto legítimo.",
+      "item1": "Nombres de personas (francés e inglés)",
+      "item2": "Ciudades y lugares (opcional, algo más lento)",
+      "item3": "Direcciones de correo",
+      "item4": "Teléfonos suizos, franceses, europeos e internacionales",
+      "item5": "IBAN (número verificado)",
+      "item6": "SIRET (número verificado)",
+      "item7": "Fechas y horas",
+      "item8": "Números de expediente y direcciones IP",
+      "note": "Un número de dieciséis cifras que no corresponde a ningún número válido no se oculta: es deliberado, para no estropear el texto."
+    },
+    "paths": {
+      "eyebrow": "DOS MODALIDADES",
+      "title": "Con tu cuenta de IA, o con la nuestra",
+      "description": "Eliges al comprar y puedes cambiar después. La protección es la misma en los dos casos: el proveedor de IA nunca ve tus datos originales.",
+      "byok": {
+        "tag": "TU CLAVE",
+        "title": "Tu cuenta de IA, tu factura",
+        "lead": "Pagas la licencia de Doublure y sigues usando tu propia cuenta y tu modelo de IA. El número de tokens no se cuenta.",
+        "f1": "Sin límite de tokens: pagas directamente a tu proveedor",
+        "f2": "Tu clave no se guarda ni se conserva",
+        "f3": "Solo se pueden contactar las direcciones que autorizas",
+        "tech": "Tu clave se queda contigo."
+      },
+      "prepaid": {
+        "tag": "GESTIONADO",
+        "title": "Nuestra cuenta de IA, tokens al contador",
+        "lead": "Recargas un saldo de tokens y usas Doublure tal cual. Nosotros nos ocupamos de la cuenta de IA y de la factura.",
+        "f1": "El saldo baja en cada petición, según lo realmente utilizado",
+        "f2": "Aviso por debajo del 10 % del saldo comprado, visible en cada respuesta",
+        "f3": "Saldo agotado: la petición se bloquea y aparece un enlace de recarga; no se envía nada",
+        "tech": "Saldo agotado: no se envía nada."
+      }
+    },
+    "pricing": {
+      "eyebrow": "PRECIOS",
+      "title": "Un precio por persona, no por token",
+      "description": "Precios en dólares estadounidenses, sin impuestos. Conservas tu cuenta de IA: Doublure no aplica comisión sobre lo que consumes.",
+      "badge": { "byok": "El más habitual" },
+      "free": {
+        "name": "Free",
+        "price": "0 $",
+        "period": "para siempre",
+        "tagline": "Para probarlo con tranquilidad, en tu equipo.",
+        "f1": "1 licencia, 1 instalación",
+        "f2": "Detección de formatos (IBAN, correo, teléfono)",
+        "f3": "Interfaz DeerFlow incluida",
+        "f4": "Instalación guiada por la documentación",
+        "cta": "Contactar"
+      },
+      "byok": {
+        "name": "Tu clave",
+        "price": "20 $",
+        "period": "al mes",
+        "tagline": "La licencia Doublure, sin tokens contados.",
+        "f1": "Tu cuenta de IA, tu consumo",
+        "f2": "Detección de nombres, lugares y fechas",
+        "f3": "Instalación y configuración contigo",
+        "f4": "Equipo: 15 $ por persona y mes, desde 3 personas",
+        "cta": "Pedir una licencia"
+      },
+      "prepaid": {
+        "name": "Gestionado",
+        "from": "desde",
+        "price": "9 $",
+        "period": "por millón de tokens",
+        "tagline": "Tú recargas, nosotros nos ocupamos del resto.",
+        "f1": "Sin cuenta de IA que configurar",
+        "f2": "Saldo visible en cada respuesta",
+        "f3": "Recarga desde 9 $ por 1 millón de tokens; 39 $ por 5 millones",
+        "f4": "Aviso al 10 % del saldo, parada limpia a cero",
+        "cta": "Comprar tokens"
+      },
+      "footnote": "Importes sin impuestos, en dólares US. Pago con tarjeta; los tokens comprados no caducan."
+    },
+    "scope": {
+      "eyebrow": "LO QUE ESTÁ CUBIERTO",
+      "title": "Lo que Doublure protege y lo que no",
+      "protects": {
+        "title": "Protegido",
+        "1": "Los datos personales escritos en el texto de los mensajes",
+        "2": "Toda la conversación, incluidas las respuestas que aparecen progresivamente",
+        "3": "El almacenamiento: solo se guardan contadores de tokens"
+      },
+      "limits": {
+        "title": "No protegido",
+        "1": "Los archivos adjuntos: solo se analizan los textos",
+        "2": "Los mensajes enviados antes de instalar Doublure",
+        "3": "Los registros del proveedor de IA y las copias de seguridad de tus herramientas"
+      },
+      "note": "Doublure reduce los riesgos, no los elimina: ni anonimización perfecta ni cumplimiento garantizado."
+    },
+    "faq": {
+      "eyebrow": "PREGUNTAS FRECUENTES",
+      "title": "Las preguntas que nos hacen antes de empezar",
+      "q1": "¿Hay que cambiar de proveedor de IA?",
+      "a1": "No. Con tu clave conservas tu cuenta y tu modelo de IA. En modalidad gestionada, nos ocupamos de la cuenta.",
+      "q2": "¿Dónde está instalado Doublure?",
+      "a2": "En tu lado, en tu equipo o tu servidor. Solo Doublure se comunica con el exterior: el resto de tus herramientas no queda expuesto.",
+      "q3": "¿Qué pasa si la detección no arranca?",
+      "a3": "Doublure se niega a funcionar antes que enviar datos sin proteger. También puedes elegir un modo reducido, con conocimiento de causa.",
+      "q4": "¿Se conservan mis datos?",
+      "a4": "No. Las correspondencias entre tus datos y los códigos permanecen en memoria durante la sesión y luego desaparecen. Solo se guardan los contadores de tokens.",
+      "q5": "¿Es compatible con mis herramientas?",
+      "a5": "Sí. Doublure se comporta como un servicio de IA estándar: la mayoría de herramientas compatibles funcionan sin cambios. La interfaz DeerFlow se incluye.",
+      "q6": "¿Qué incluye la instalación acompañada?",
+      "a6": "El script, la configuración, los modelos de detección, la creación de claves y una prueba completa de extremo a extremo. Nosotros ponemos en marcha contigo.",
+      "q7": "¿Qué pasa cuando mi saldo está vacío?",
+      "a7": "La petición se bloquea antes de llegar a la IA y un mensaje te propone recargar. No se consume ningún token ni se envía dato alguno.",
+      "q8": "¿Puedo cambiar de modalidad?",
+      "a8": "Sí, en cualquier momento: pasas de tu clave a gestionado (o al revés) sin reinstalar, y tu licencia sigue siendo la misma."
+    },
+    "contact": {
+      "eyebrow": "PASAR A LA PRÁCTICA",
+      "title": "Probemos Doublure en una conversación real",
+      "description": "Una duda técnica, un presupuesto para tu equipo o una demostración con tus propios mensajes: escríbenos.",
+      "emailButton": "Enviar un correo",
+      "whatsappButton": "WhatsApp",
+      "direct": "O directamente:",
+      "note": "Respuesta en menos de 24 h laborables. No hace falta ningún dato de cliente para un primer contacto.",
+      "form": {
+        "name": "Nombre",
+        "email": "Correo electrónico",
+        "message": "Tu mensaje",
+        "messagePlaceholder": "Unas líneas sobre lo que necesitas (20 caracteres como mínimo).",
+        "consent": "Acepto que esta información se use para responderme.",
+        "submit": "Enviar mensaje",
+        "success": "Mensaje listo: se abre tu aplicación de correo para enviarlo.",
+        "errorName": "Indica tu nombre (2 caracteres como mínimo).",
+        "errorEmail": "Esta dirección de correo no parece válida.",
+        "errorMessage": "Describe tu necesidad en 20 caracteres como mínimo.",
+        "errorConsent": "Marca esta casilla para que podamos responderte."
+      }
+    },
+    "cookie": {
+      "title": "Cookies y medición de audiencia",
+      "text": "Sin cookies publicitarias. Solo con tu consentimiento, una medición de audiencia anónima nos ayuda a mejorar las páginas.",
+      "more": "Más información",
+      "refuse": "Rechazar",
+      "accept": "Aceptar"
+    },
+    "footer": {
+      "note": "Doublure reduce la exposición de los datos personales en los mensajes enviados a la IA. No es una garantía de cumplimiento.",
+      "privacy": "Privacidad",
+      "terms": "Condiciones generales",
+      "cookies": "Cookies",
+      "rights": "Todos los derechos reservados."
+    }
+  }
+}
